@@ -1,0 +1,42 @@
+{
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client": {
+                               "inject": [
+                                 "@deepseek-ai/dsh-client-runtime",
+                                 "@deepseek-ai/dsh-client-ui-settings",
+                                 "@deepseek-ai/dsh-api-remotes"
+                               ],
+                               "platform": "web"
+                           }
+            },
+    "description":  "Role-aware model router plugin for DeepSeek Harness 0.1.1-rc.2",
+    "type":  "module",
+    "version":  "0.1.1-rc.2-local.1",
+    "files":  [
+                  "lib",
+                  "src",
+                  "cordis.patch.yml",
+                  "tsconfig.json",
+                  "README.md"
+              ],
+    "name":  "@zhaoan2308184882-spec/dsh-hooks-model-router",
+    "main":  "lib/index.js",
+    "exports":  {
+                    ".":  {
+                              "default":  "./lib/index.js"
+                          },
+                    "./client":  {
+                                    "default": "./lib/client.js"
+                                 },
+                    "./package.json":  "./package.json"
+                },
+    "peerDependencies": {
+      "@deepseek-ai/dsh-client-runtime": "^0.1.1-rc.2",
+      "@deepseek-ai/dsh-client-ui-settings": "^0.1.1-rc.2",
+      "@deepseek-ai/dsh-api-remotes": "^0.1.1-rc.2"
+    },
+    "license":  "MIT"
+}

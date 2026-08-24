@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+.npm-cache/
+*.tgz
+*.log
+.env
+.env.*
+settings.yaml
+auth.json
+.DS_Store
+Thumbs.db

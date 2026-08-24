@@ -1,0 +1,16 @@
+- insert:
+    - id: hooks-model-router
+      name: '@zhaoan2308184882-spec/dsh-hooks-model-router'
+      config:
+        enabled: false
+        respectUserSelection: true
+        planner:
+          provider: deepseek-official
+          model: deepseek-v4-flash
+        executor:
+          provider: deepseek-official
+          model: deepseek-v4-flash
+        reviewer:
+          provider: deepseek-official
+          model: deepseek-v4-flash
+        rule: auto

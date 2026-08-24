@@ -1,0 +1,7 @@
+- id: ui-settings-models
+  name: '@deepseek-ai/dsh-client-ui-settings-models'
+  disabled: true
+
+- insert:
+    - id: llm-codex
+      name: '@zhaoan2308184882-spec/dsh-llm-codex'

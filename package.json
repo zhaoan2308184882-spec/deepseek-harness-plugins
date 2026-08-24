@@ -1,0 +1,11 @@
+{
+  "name": "deepseek-harness-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community plugins for DeepSeek Harness",
+  "license": "MIT",
+  "workspaces": [
+    "plugins/*"
+  ]
+}
+
