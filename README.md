@@ -1,6 +1,6 @@
 # DeepSeek Harness Community Plugins
 
-面向 DeepSeek Harness 的非官方社区插件集合。目前针对 Harness `0.1.1-rc.2` 适配，仓库同时包含 TypeScript 源码和可直接加载的 `lib` 构建产物。
+面向 DeepSeek Harness 的非官方社区扩展集合，包含两个插件和一个 Windows 桌面应用。目前针对 Harness `0.1.1-rc.2` 适配，插件同时包含 TypeScript 源码和可直接加载的 `lib` 构建产物。
 
 > 非官方项目：本仓库不隶属于 DeepSeek，包名使用维护者个人作用域，避免与官方包混淆。
 
@@ -10,6 +10,12 @@
 | --- | --- | --- |
 | [`dsh-llm-codex`](plugins/dsh-llm-codex) | 通过本机 Codex CLI 为 Harness 提供 Codex 模型 | 设置 → 模型 |
 | [`dsh-hooks-model-router`](plugins/dsh-hooks-model-router) | 为 Planner、Executor、Reviewer 配置不同模型 | 设置 → 模型路由 |
+
+## Harness Desktop
+
+[`Harness Desktop`](apps/harness-desktop) 是 Harness Web 的 Windows 桌面壳。它会在后台执行 `dsh web --no-open`，在独立应用窗口中打开 Harness，并沿用本机 `web` Profile 中的设置和插件。
+
+安装版和便携版请从 [GitHub Releases](https://github.com/zhaoan2308184882-spec/deepseek-harness-plugins/releases) 下载。桌面版不内置 Harness，使用前仍需在本机安装并配置 `dsh`。完整说明见 [桌面版文档](apps/harness-desktop/README.md)。
 
 ## 前置条件
 
@@ -79,4 +85,3 @@ dsh.cmd plugin --profile web remove @zhaoan2308184882-spec/dsh-hooks-model-route
 ## License
 
 [MIT](LICENSE)
-

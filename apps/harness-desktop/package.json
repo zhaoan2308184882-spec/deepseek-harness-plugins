@@ -1,0 +1,37 @@
+{
+  "name": "harness-desktop",
+  "version": "0.1.4",
+  "private": true,
+  "description": "A local Windows desktop shell for DeepSeek Harness Web",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "set ELECTRON_RUN_AS_NODE=&& electron .",
+    "check": "node --check src/main.js && node --check src/preload.js",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "^37.3.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "io.github.zhaoan2308184882.harnessdesktop",
+    "productName": "Harness Desktop",
+    "asar": true,
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "executableName": "harness-desktop",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false,
+      "include": "build/installer.nsh"
+    }
+  }
+}

@@ -3,6 +3,8 @@ node_modules/
 .npm-cache/
 *.tgz
 *.log
+dist/
+release/
 .env
 .env.*
 settings.yaml
